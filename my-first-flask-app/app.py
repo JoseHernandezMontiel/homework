@@ -1,8 +1,6 @@
 from flask import Flask, redirect, request, render_template, url_for
 app = Flask(__name__)
 
-
-
 # POST
 
 @app.route('/login', methods=['POST'])
