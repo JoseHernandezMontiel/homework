@@ -2,14 +2,12 @@ FROM python:3-alpine
 
 WORKDIR /code
 
-COPY requirements.txt requirements.txt
+COPY . /code
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /code
-
-ENV PYTHONPATH "${PYTHONPATH}:/code"
-
 ENV FLASK_APP=/code/src/app.py
+
+ENV PYTHONPATH "${PYTHONPATH}:/code/src"
 
 CMD [ "flask", "run", "--host=0.0.0.0", "--port=8080"]
