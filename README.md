@@ -18,3 +18,7 @@ IMPORTANT NOTE:
   For all new projects starting from the "repository_pattern" and onwards, please access them by navigating to the respective directory and running:
 
   docker-compose up
+
+  Request must be fetched from:
+  
+  http://localhost
