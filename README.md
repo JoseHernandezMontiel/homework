@@ -12,3 +12,9 @@ INSTRUCTIONS:
   To deactivate the virtual environment, simply enter the following command (you can execute it from any location, but it must be executed in the same terminal where it was activated)
 
   deactivate
+
+IMPORTANT NOTE:
+
+  For all new projects starting from the "repository_pattern" and onwards, please access them by navigating to the respective directory and running:
+
+  docker-compose up
