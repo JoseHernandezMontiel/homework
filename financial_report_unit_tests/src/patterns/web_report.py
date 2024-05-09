@@ -1,6 +1,3 @@
-from patterns.csv_utils import Ride
-
-
 def create_content(rides):
     builder = [_create_headers("Taxi Report"), _create_table_headers()]
     for ride in rides:

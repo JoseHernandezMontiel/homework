@@ -6,8 +6,8 @@ COPY . /code
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "python", "/code/src/app.py"]
+# CMD [ "python", "/code/src/app.py"]
 
-# RUN pip install -e src
+RUN pip install -e src
 
-# CMD ["pytest"]
+CMD ["pytest"]
